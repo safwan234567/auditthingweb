@@ -10,8 +10,8 @@ module.exports = {
   siteMetadata: {
     title: "Audit thing Page",
     titleTemplate: "Audit Thing",
-    description: "A simple one-page site for new businesses that uses GatsbyJS",
-    siteUrl: "https://thestartup.netlify.com",
+    description: "A simple to use auditing tool based on CIS CentOS 8",
+    siteUrl: "https://audit-thing.netlify.app/",
     author: "Team1",
     authorSite: "https://github.com/safwan234567/Linux-Auditing-Major-Project",
     image: "",
