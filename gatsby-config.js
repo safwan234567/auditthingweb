@@ -8,13 +8,13 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: "Startup",
-    titleTemplate: "%s | Helping startups get started",
+    title: "Audit thing Page",
+    titleTemplate: "Audit Thing",
     description: "A simple one-page site for new businesses that uses GatsbyJS",
     siteUrl: "https://thestartup.netlify.com",
-    author: "Morgan Baker",
-    authorSite: "https://www.morganbaker.dev",
-    image: "/yellow-metal-design-decoration.jpg",
+    author: "Team1",
+    authorSite: "https://github.com/safwan234567/Linux-Auditing-Major-Project",
+    image: "",
     twitterUsername: "@twitter",
   },
   plugins: [
@@ -30,5 +30,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-image`,
   ],
 }

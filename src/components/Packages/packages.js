@@ -6,7 +6,8 @@ const Packages = ({ title, para, children }) => {
     <PackagesWrapper>
       <div className="text-area">
         <h2>{title}</h2>
-        <p>{para}</p>
+        <br></br>
+        <h3>{para}</h3>
       </div>
       <div className="flex-container">{children}</div>
     </PackagesWrapper>
@@ -14,7 +15,7 @@ const Packages = ({ title, para, children }) => {
 }
 
 const PackagesWrapper = styled.section`
-  padding: 100px 30px;
+  padding: 10px 30px;
   text-align: center;
 
   .text-area {

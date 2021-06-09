@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import {
   mainMenuItems,
-  footerMenuItems,
   socialMenuItems,
 } from "../constants/menu-items"
 import styled from "styled-components"
@@ -36,20 +35,11 @@ const Footer = ({ Logo }) => {
                 <img src={Logo} alt={`${footerData.title} logo`} />
               </Link>
             )}
-            <address>
-              85 Simone Weil Avenue
-              <br />
-              Watton-at-Stone
-              <br />
-              SG14 8BL
-            </address>
-            <a className="telephone" href="tel:+004407076009211">
-              07076 009 211
-            </a>
+            
           </div>
         ) : null}
 
-        {mainMenuItems || socialMenuItems || footerMenuItems ? (
+        {mainMenuItems || socialMenuItems ? (
           <div className="menus-cont">
             {/* If main menu items are being imported, render this */}
             {mainMenuItems && (
@@ -67,16 +57,7 @@ const Footer = ({ Logo }) => {
               </ul>
             )}
 
-            {/* If footer menu items are being imported, render this */}
-            {footerMenuItems && (
-              <ul className="footer-menu">
-                {footerMenuItems.map((item, index) => (
-                  <li key={`footerMenuItem${index}`}>
-                    <Link to={item.path}>{item.title}</Link>
-                  </li>
-                ))}
-              </ul>
-            )}
+           
 
             {/* If social menu items are being imported, render this */}
             {socialMenuItems && (
@@ -311,5 +292,27 @@ const FooterStyles = styled.footer`
     }
   }
 `
-
+/*<address>
+              85 Simone Weil Avenue
+              <br />
+              Watton-at-Stone
+              <br />
+              SG14 8BL
+            </address>
+             <a className="telephone" href="tel:+004407076009211">
+              07076 009 211
+            </a>
+            
+            
+             { If footer menu items are being imported, render this }
+             {footerMenuItems && (
+              <ul className="footer-menu">
+                {footerMenuItems.map((item, index) => (
+                  <li key={`footerMenuItem${index}`}>
+                    <Link to={item.path}>{item.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+            */
 export default Footer

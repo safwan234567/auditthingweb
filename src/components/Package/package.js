@@ -7,7 +7,9 @@ const Package = ({ title, children, active }) => {
       <div className="content">
         <h2>{title}</h2>
         {children}
+        <br></br>
       </div>
+      <br></br>
     </PackageWrapper>
   )
 }
@@ -16,12 +18,13 @@ const PackageWrapper = styled.article`
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 350px;
-  margin-bottom: 3rem;
+  max-width: 250px;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
 
   @media (min-width: 992px) {
     width: calc(100% / 3);
-    margin-bottom: 0;
+    margin-bottom: 10;
   }
 
   .content {
@@ -68,7 +71,8 @@ const PackageWrapper = styled.article`
 
     @media (min-width: 992px) {
       order: 0;
-      transform: scale(1.25);
+      transform: scale(1.2);
+      margin-right: 3.5rem;
     }
 
     .content {

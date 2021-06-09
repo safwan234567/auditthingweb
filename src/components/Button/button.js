@@ -43,11 +43,11 @@ const ButtonWrapper = styled.button`
 
   &:hover {
     cursor: pointer;
-    animation: animate 8s linear infinite;
+    animation: animate 5s linear infinite;
 
     &::before {
       filter: blur(20px);
-      opacity: 1;
+      opacity: 1.5;
       animation: animate 8s linear;
     }
   }
